@@ -1,4 +1,4 @@
-# 🤖 LangAgentsX : Exploring Chains of Intelligence
+# 🤖 LangAgentsX: Exploring Chains of Intelligence
 
 **LangAgentsX** is a multi-agent LLM-powered chatbot that routes your queries through a graph of intelligent agents. Built using **LangChain** and **LangGraph**, the system explores academic and public knowledge from sources like **arXiv** and **Wikipedia** — delivering precise, source-aware answers in real time.
 
@@ -43,6 +43,8 @@ Ask questions like:
 - _"What are best practices in prompt engineering?"_
 
 LangAgentsX will route your query to the most relevant agent and knowledge source.
+
+### 🚀 Try it on Hugging Face: [LangAgentsX on Spaces](https://huggingface.co/spaces/s-siddhesh/LangAgentX)
 
 ---
 
