@@ -3,7 +3,7 @@ import logging
 import streamlit as st
 from app import app
 
-# Set environment variables BEFORE any other imports
+## Set environment variables BEFORE any other imports
 os.environ["USER_AGENT"] = "multi-agent-rag-app/1.0"
 os.environ["STREAMLIT_WATCHER_TYPE"] = "none"  # disables file watcher, fixes PyTorch event loop error
 

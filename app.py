@@ -28,7 +28,7 @@ vector_store.add_documents(doc_splits)
 # Define retriever-based index
 astra_vector_index = VectorStoreIndexWrapper(vectorstore=vector_store)
 
-# Build graph
+## Build graph
 workflow = StateGraph(GraphState)
 workflow.add_node("wiki_search", wiki_search)
 workflow.add_node("retrieve", retrieve)
