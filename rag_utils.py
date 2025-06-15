@@ -14,6 +14,7 @@ ASTRA_DB_APPLICATION_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
 ASTRA_DB_ID = os.getenv("ASTRA_DB_ID")
 HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
+## create a Cassandra vector store for RAG
 if not ASTRA_DB_APPLICATION_TOKEN or not ASTRA_DB_ID:
     logger.error("Missing Astra DB credentials in environment variables.")
 
