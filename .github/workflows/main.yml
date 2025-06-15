@@ -14,7 +14,9 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+      - name: Sync with Hugging Face hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://s-siddhesh:$HF_TOKEN@huggingface.co/spaces/s-siddhesh/LangAgentX main 
+        run: |
+          git pull https://s-siddhesh:$HF_TOKEN@huggingface.co/spaces/s-siddhesh/LangAgentX main || true
+          git push https://s-siddhesh:$HF_TOKEN@huggingface.co/spaces/s-siddhesh/LangAgentX main
