@@ -7,8 +7,7 @@ ENV PYTHONUNBUFFERED=1 \
 # Set work directory
 WORKDIR /app
 
-# Copy requirements and install dependencies
-COPY requirement.txt /app/requirements.txt
+#and install dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy the rest of the code
