@@ -1,3 +1,4 @@
+streamlit
 langchain
 langgraph
 cassio
@@ -10,4 +11,3 @@ langchain_huggingface
 arxiv 
 wikipedia
 load_dotenv
-streamlit
